@@ -5,5 +5,5 @@ class OptimizadorVolumen {
 public:
 	virtual double volOptimo(set<Paquete*>)=0;
 
-	~OptimizadorVolumen();
+	virtual ~OptimizadorVolumen();
 }

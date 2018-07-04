@@ -7,6 +7,7 @@
 				Producto* p = (Producto*)i->geCurrent();
 				this->total += p->getCantidad() * p->getPrecio();
 			}
+			delete i;// libero el iterador
 		};
 
 		void OrdenCompra::generarPago(DataPago *dp){
@@ -34,7 +35,9 @@
 		OrdenCompra::~OrdenCompra(){
 			/// ESTO DEBERÍA ESTAR MAL PORQUE DESTRUYO LOCALMENTE MEMORIA QUE NO CREÉ LOCALMENTE
 			for (IIterator* i = this->productos->beginIterator(); i->hasCurrent(); i->next()){
-				delete (Producto*)i->getCurrent();
+				Producto* p = (Producto*)i->getCurrent();
+				productos->remove(p);
+				delete p;
 			} 
 			delete this->pago;
 		};

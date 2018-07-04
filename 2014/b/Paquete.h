@@ -4,5 +4,5 @@ public:
 	virtual double calcularVolumen()=0;
 
 	Paquete();
-	~Paquete();
+	virtual ~Paquete();
 }

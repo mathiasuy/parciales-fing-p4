@@ -9,8 +9,8 @@ private:
 public:
 	double calcularPeso();
 	double calcularVolumen();
-	void setOptVol(OptimizadorVolumen);
+	void setOptVol(OptimizadorVolumen*);
 
-	Complejo();
+	Complejo(OptimizadorVolumen*, set<Paquete*>);
 	~Complejo();
 }

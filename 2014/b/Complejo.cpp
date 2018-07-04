@@ -1,16 +1,16 @@
 double Complejo::calcularPeso(){
 	double sum = 0;
-	for (set<Paquete*>::iterator i = paquetes.begin(); i != paquetes.end(); i++){
+	for (set<Paquete*>::iterator i = componentes.begin(); i != componentes.end(); i++){
 		sum += *i->calcularPeso();
 	}
 	return sum;
 }
 
 double Complejo::calcularVolumen(){
-	return this->optimizador->volOptimo(this->paquetes);
+	return this->optimizador->volOptimo(this->componentes);
 }
 
-void Complejo::setOptVolumen(OptimizadorVolumen o){
+void Complejo::setOptVolumen(OptimizadorVolumen* o){
 	this->optimizador = o;
 
 }
@@ -21,8 +21,10 @@ Complejo::Complejo(OptimizadorVolumen* i, set<Paquete*> componentes){
 }
 
 Complejo::~Complejo(){
-	for (set<Paquete*>::iterator i = paquetes.begin(); i!=paquetes.end(); i++){
-		delete *i;
+	for (set<Paquete*>::iterator i = componentes.begin(); i!=componentes.end(); i++){
+		Paquete* p = *i;
+		componentes.erase(*i);
+		delete p;
 	}
 	delete optimizador;
 }
