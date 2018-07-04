@@ -7,11 +7,7 @@ double Complejo::calcularPeso(){
 }
 
 double Complejo::calcularVolumen(){
-	double sum = 0;
-	for (set<Paquete*>::iterator i = paquetes.begin(); i != paquetes.end(); i++){
-		sum += *i->calcularVolumen();
-	}
-	return sum;
+	return this->optimizador->volOptimo(this->paquetes);
 }
 
 void Complejo::setOptVolumen(OptimizadorVolumen o){
@@ -19,8 +15,9 @@ void Complejo::setOptVolumen(OptimizadorVolumen o){
 
 }
 
-Complejo::Complejo(){
-
+Complejo::Complejo(OptimizadorVolumen* i, set<Paquete*> componentes){
+	this->componentes = componentes;
+	this->optimizador = i;
 }
 
 Complejo::~Complejo(){
