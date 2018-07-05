@@ -15,22 +15,25 @@
 		if (current == NULL)
 			return false;
 		Node* n = current;
-		for (int i=stepSize; i>0; i--){
+		int i=stepSize;
+		bool seguir = true;
+		while (i>0){
 			if (forward){
 				if (n->hasNext()){
 					n = n->getNext();
 				}else{
-					break;
+					seguir = false;
 				}
 			}else{
 				if (n->hasPrevious()){
 					n = n->getPrevious();
 				}else{
-					break;
+					seguir = false;
 				}
 			}
+			i--;
 		}
-		return i==0;
+		return seguir;
 	};
 
 	Object SpecialIterator::next(){
