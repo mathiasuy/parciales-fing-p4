@@ -6,5 +6,5 @@ class Tienda : public Observer{
 		string nombre;
 		set<Producto*> lp;
 	public:
-		notify(Event);
-}-+
+		void notify(Event*);
+}
