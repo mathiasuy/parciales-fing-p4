@@ -16,24 +16,18 @@
 			return false;
 		Node* n = current;
 		int i=stepSize;
-		bool seguir = true;
-		while (i>0){
-			if (forward){
-				if (n->hasNext()){
-					n = n->getNext();
-				}else{
-					seguir = false;
-				}
-			}else{
-				if (n->hasPrevious()){
-					n = n->getPrevious();
-				}else{
-					seguir = false;
-				}
+		if (forward){
+			while (n->hasNext() && i>0){
+				n = n->getNext();
+				i--;
 			}
-			i--;
+		}else{
+			while (n->hasPrevious() && i>0){
+				n = n->getPrevious();
+				i--;
+			}
 		}
-		return seguir;
+		return i==0;
 	};
 
 	Object SpecialIterator::next(){
