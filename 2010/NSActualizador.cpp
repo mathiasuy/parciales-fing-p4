@@ -15,6 +15,7 @@
 			i->next();
 		}
 		delete i;
+		delete apps;
 	};
 
 	void NSActualizador::agregarAplicacion(NSIAplicacion* a){
