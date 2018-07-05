@@ -1,6 +1,11 @@
-ContenidoAplicacionXX::ContenidoAplicacionXX(string u){
+ContenidoAplicacionXX::ContenidoAplicacionXX(string u, string c){
 	this->url = u;
-};
+	contenido = c;
+}
+
+string ContenidoAplicacionXX::getContenido(){
+	return contenido;
+}
 
 ContenidoAplicacionXX::~ContenidoAplicacionXX(){};
 
