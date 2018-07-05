@@ -1,0 +1,1 @@
+![Diagrama de clases del patrón](https://github.com/mathiasuy/parciales-fing-p4/blob/master/2011/diagrama.png?raw=true)
