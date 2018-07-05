@@ -12,7 +12,7 @@ Personalizable::~Personalizable(){
 }
 
 void Personalizable::setPrecioItem(DataItemProd* dip){
-	DataItemProdPers* dipp = <dynamic_cast>(DataItemProdPers*)dip;
+	DataItemProdPers* dipp = dynamic_cast<DataItemProdPers*>(dip);
 	float retorno = 0;
 	for (list<DataCompOp>::iterator i; i != dipp->getPersonalizacion().end(); ++i){
 		retorno += (*i)->getPrecioOp();

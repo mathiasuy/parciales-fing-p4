@@ -11,9 +11,9 @@
 		};
 
 		void OrdenCompra::generarPago(DataPago *dp){
-			DataTarjeta* tarjeta = <dynamic_cast>(DataTarjeta*)dp;
+			DataTarjeta* tarjeta = dynamic_cast<DataTarjeta*>(dp);
 			if (tarjeta == NULL){
-				DataContado* dc = <dynamic_cast>(DataContado*)dp;
+				DataContado* dc = dynamic_cast<DataContado*>(dp);
 				this->pago = new Contado(dp->getMonto(),dp->getDescuento());
 			}else{
 				this->pago = new Tarjeta(tarjeta->getMonto(),tarjeta->getTarjeta());
