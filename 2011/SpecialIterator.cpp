@@ -30,7 +30,7 @@
 		return i==0;
 	};
 
-	Object SpecialIterator::next(){
+	Object* SpecialIterator::next(){
 		Node* n = current;
 		for (int i=0; i<stepSize; i++){
 			if (!this->hasNext())

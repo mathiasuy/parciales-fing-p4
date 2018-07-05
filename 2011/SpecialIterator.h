@@ -9,7 +9,7 @@ class SpecialIterator : public Iterator{
 		SpecialIterator();
 	public:
 		virtual bool hasNext(); ///¿POR QUÉ ES VIRTUAL?
-		virtual Object next(); ///¿POR QUÉ ES VIRTUAL?
+		virtual Object* next(); ///¿POR QUÉ ES VIRTUAL?
 		void setForward();
 		void setBackward();
 		void setStepSize(int);
