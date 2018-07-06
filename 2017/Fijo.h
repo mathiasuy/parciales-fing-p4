@@ -8,5 +8,5 @@ class Fijo : public Producto{
 		void setPrecioItem(DataItemProd*);
 
 		Fijo(int,float);
-		~Fijo();
+		virtual ~Fijo();
 }

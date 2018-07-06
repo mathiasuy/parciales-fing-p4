@@ -6,4 +6,4 @@ void DataPago::DataPago(float a){
 	this->monto = a;
 };
 
-virtual DataPago::~DataPago(){};
+DataPago::~DataPago(){};

@@ -9,6 +9,6 @@ class ServicioMapa {
 		ServicioMapa();
 	public:
 		string* obtenerRuta(Posicion);
-		~ServicioMapa();
+		virtual ~ServicioMapa();
 		ServicioMapa* getInstance();
 }

@@ -13,5 +13,5 @@ class Opcion{
 		void setPrecioOp(float);
 
 		Opcion(string,float);
-		~Opcion();
+		virtual ~Opcion();
 }

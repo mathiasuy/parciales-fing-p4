@@ -8,7 +8,7 @@ class DataCompOp{
 		float precioOp;
 	public:
 		DataCompOp(string , string , float);
-		~DataCompOp();
+		virtual ~DataCompOp();
 
 		string getComp();
 		string getOp();

@@ -7,5 +7,5 @@ class Premium : public Usuario{
 		list<Cancion*> ordenar_favoritas(EnumOrder);
 
 		Premium(string,string,string);
-		~Premium();
+		virtual ~Premium();
 }

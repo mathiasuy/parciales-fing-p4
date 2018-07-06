@@ -12,5 +12,5 @@ public:
 	void setOptVol(OptimizadorVolumen*);
 
 	Complejo(OptimizadorVolumen*, set<Paquete*>);
-	~Complejo();
+	virtual ~Complejo();
 }

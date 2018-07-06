@@ -8,5 +8,5 @@ class DataItemProd{
 		void setPrecio(float precio); /// ¿¿¿¿ESTO NO ESTÁ TEORICAMENTE MAL????
 
 		DataItemProd(int);
-		~DataItemProd();
+		virtual ~DataItemProd();
 }

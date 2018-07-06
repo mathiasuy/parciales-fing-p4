@@ -15,5 +15,5 @@ class Personalizable : public Producto{
 		void nuevaOpComp(string , string , float);
 
 		Personalizable(int);
-		~Personalizable();
+		virtual ~Personalizable();
 }

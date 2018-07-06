@@ -9,5 +9,5 @@ public:
 	double calcularVolumen();
 
 	Sencillo(double,double);
-	~Sencillo();
+	virtual ~Sencillo();
 }

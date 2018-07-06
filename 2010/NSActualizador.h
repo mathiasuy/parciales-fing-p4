@@ -7,7 +7,7 @@ private:
 	static NSActualizador* instancia;
 	NSActualizador();
 public:
-	~NSActualizador();
+	virtual ~NSActualizador();
 	void agregarAplicacion(NSIAplicacion*);
 	void quitarAplicacion(NSIAplicacion*);
 	void actualizarContenidoAplicaciones();

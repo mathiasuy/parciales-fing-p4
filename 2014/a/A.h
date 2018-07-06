@@ -5,5 +5,5 @@ class a{
 		A();
 	public:
 		A* getInstance();
-		~A();
+		virtual ~A();
 }

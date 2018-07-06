@@ -9,7 +9,7 @@ class ContenidoAplicacionXX : public NSIContenido{
 		string contenido;
 	public:
 		ContenidoAplicacionXX(string,string);
-		~ContenidoAplicacionXX();
+		virtual ~ContenidoAplicacionXX();
 
 		string obtenerURL();
 		string getContenido();

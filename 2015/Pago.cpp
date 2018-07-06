@@ -1,5 +1,5 @@
-Pago(float a){
+Pago::Pago(float a){
 	this->monto = a;
 };
 
-virtual ~Pago(){};
+Pago::~Pago(){};

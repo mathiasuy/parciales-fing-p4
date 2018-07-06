@@ -5,5 +5,5 @@ class Posicion{
 		float getX();
 		float getY();
 		Posicion(float,float);
-		~Posicion();
+		virtual ~Posicion();
 }

@@ -21,5 +21,5 @@ class OrdenCompra{
 		void setRutaDespacho();
 
 		OrdenCompra(Cliente* cliente, Producto* producto); //POR EL DIAGRAMA, NO PUEDE HABER UNA INSTANCIA DE ESTA CLASE SIN UN PRODUCTO
-		~OrdenCompra();
+		virtual ~OrdenCompra();
 }

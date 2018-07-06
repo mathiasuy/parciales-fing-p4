@@ -8,7 +8,7 @@ class CancionUtils{
 		CancionUtils();
 		static CancionUtils* instance;
 	public:
-		~CancionUtils();
+		virtual ~CancionUtils();
 		static CancionUtils* getInstance();
 		map<int,Cancion*> ordenar_lista(map<int,Cancion*> canciones, EnumOrder criterio);
 }

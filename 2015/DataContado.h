@@ -6,5 +6,5 @@ class DataContado : public DataPago{
 	public:
 		float getDescuento();
 		DataContado(float);
-		~DataContado();
+		virtual ~DataContado();
 }

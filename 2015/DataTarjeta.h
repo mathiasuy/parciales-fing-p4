@@ -7,5 +7,5 @@ class DataTarjeta : public DataPago{
 	public:
 		TTarjeta getTarjeta();
 		DataTarjeta(TTarjeta);
-		~DataTarjeta();
+		virtual ~DataTarjeta();
 }

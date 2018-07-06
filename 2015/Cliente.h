@@ -12,5 +12,5 @@ class Cliente {
 		string getDir();
 		Posicion getPosicion();
 		Cliente(string,string,string,string,Posicion*);
-		~Cliente();
+		virtual ~Cliente();
 }

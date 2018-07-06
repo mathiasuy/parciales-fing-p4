@@ -5,5 +5,5 @@ class Contado : public Pago{
 		float descuento;
 	public:
 		Contado(float,float);
-		~Contado();
+		virtual ~Contado();
 }

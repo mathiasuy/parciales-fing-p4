@@ -9,5 +9,5 @@ class DataItemProdPers : public DataItemProd{
 		list<DataCompOp> getPersonalizacion();
 		
 		DataItemProdPers(int,float);
-		~DataItemProdPers();
+		virtual ~DataItemProdPers();
 }

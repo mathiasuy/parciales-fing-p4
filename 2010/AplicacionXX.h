@@ -9,6 +9,6 @@ private:
 	ContenidoAplicacionXX* visible;
 public:
 	AplicacionXX(ContenidoAplicacionXX* vistas[3], ContenidoAplicacionXX* visible);
-	~AplicacionXX();
+	virtual ~AplicacionXX();
 	virtual void actualizarContenido();
 }

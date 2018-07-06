@@ -10,5 +10,5 @@ class Producto : public ICollectible{
 		int cantidad;
 	public:
 		Producto(string,string,float,cantidad);
-		~Producto();
+		virtual ~Producto();
 }

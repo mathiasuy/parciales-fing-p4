@@ -7,5 +7,5 @@ public:
 	virtual void setPrecioItem(DataItemProd* dip)=0;
 	
 	Producto(int);
-	virtual	~Producto();
+	virtual ~Producto();
 }

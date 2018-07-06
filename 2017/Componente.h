@@ -11,5 +11,5 @@ class Componente{
 		void nuevaOp(string, float);
 
 		Componente(string);
-		~Componente();
+		virtual ~Componente();
 }

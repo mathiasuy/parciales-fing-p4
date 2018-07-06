@@ -3,5 +3,5 @@
 class DataItemProdFijo : public DataItemProd{
 	public:
 		DataItemProd(int);
-		~DataItemProd();
+		virtual ~DataItemProd();
 }

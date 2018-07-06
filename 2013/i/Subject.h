@@ -13,5 +13,5 @@ class Subject{
 		void clearObservers();
 
 		Subject();
-		~Subject();
+		virtual ~Subject();
 }

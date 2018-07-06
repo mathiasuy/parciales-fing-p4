@@ -6,5 +6,5 @@ class Tarjeta : public Pago{
 		TTarjeta tarjeta;
 	public:
 		Tarjeta(float, TTarjeta);
-		~Tarjeta();
+		virtual ~Tarjeta();
 }

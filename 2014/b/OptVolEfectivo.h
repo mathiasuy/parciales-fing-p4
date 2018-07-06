@@ -5,5 +5,5 @@ public:
 	double volOptimo(set<Paquete*>);
 
 	OptVolEfectivo();
-	~OptVolEfectivo();
+	virtual ~OptVolEfectivo();
 }

@@ -15,5 +15,5 @@ class SpecialIterator : public Iterator{
 		void setStepSize(int);
 
 		SpecialIterator(Node* n, int size);
-		virtual ~SpecialIterator(); ///¿POR QUÉ ES VIRTUAL? *
+		virtual ~SpecialIterator(); ///¿POR QUÉ ES VIRTUAL? * R: es buena práctica por si se llega a heredar en un futuro
 }
