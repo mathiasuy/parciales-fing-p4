@@ -2,10 +2,10 @@
 
 	void SistemaDeArchivo::crearArchivo(int idCarpeta,int idArchivo,int tamanio){
 		KeyInteger ski(idCarpeta);
-		Directorio* directorio = (Directorio*)elementos->find(&ski); // NOTAR QUE USE VERSIÓN ALTERNATIVA DE KEY ESTATICA (NO PRECISA LIBERAR MEMORIA)
+		Directorio* directorio = (Directorio*)elementos->find(&ski); //  NOTAR QUE USE VERSIÓN ALTERNATIVA DE KEY ESTATICA (NO PRECISA LIBERAR MEMORIA)
 		if (directorio != NULL){
 			Archivo* archivo = directorio->crearArchivo(idArchivo,tamanio);
-			this->elementos->add(new KeyInteger(idArchivo),archivo);
+			this->elementos->add(new KeyInteger(idArchivo),archivo); // AL AGREGAR LA KEY A LA COLECCION DEBO CREARLE MEMORIA
 		}else
 			throw std::invalid_argument("Directorio no valido");
 	};
