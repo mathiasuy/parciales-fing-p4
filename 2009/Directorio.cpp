@@ -6,7 +6,7 @@
 			i->next();
 		}
 		delete i;
-		return ret;
+		return ret; 
 	};
 
 	Archivo* Directorio::crearArchivo(int idArchivo, int tamanio){
