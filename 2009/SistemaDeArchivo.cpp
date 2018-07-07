@@ -3,8 +3,8 @@
 	void SistemaDeArchivo::crearArchivo(int idCarpeta,int idArchivo,int tamanio){
 //  VERSIÓN ALTERNATIVA DE KEY ESTATICA (NO PRECISA LIBERAR MEMORIA)
 		/* VERSION 1 */
-		KeyInteger ski(idCarpeta);
-		Directorio* directorio = (Directorio*)elementos->find(&ski); //NOTAR EL &
+		KeyInteger key(idCarpeta);
+		Directorio* directorio = (Directorio*)elementos->find(&key); //NOTAR EL &
 		/* FIN VERSION 1 */
 
 //  VERSIÓN ALTERNATIVA QUE CREA MEMORIA (LUEGO HAY QUE LIBERARLA)
