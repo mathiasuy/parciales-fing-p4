@@ -5,6 +5,7 @@ class VideoAdapter public : Recurso{
 		Video* adaptee;
 	public:
 		void carga();
+		void cargarEspecifico();
 		~VideoAdapter();
 		VideoAdapter(string);
 }

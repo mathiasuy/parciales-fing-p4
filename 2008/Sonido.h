@@ -3,4 +3,5 @@
 class Sonido : public Recurso{
 public:
 	void cargar();
+	void cargarEspecifico();
 }
