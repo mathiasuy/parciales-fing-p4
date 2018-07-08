@@ -15,7 +15,6 @@
 			Documento* doc = ((Documento*)i)->getCurrent();
 			// KEY NO ESTA EN LA LETRA, LO PONGO PARA PRACTICAR, EN REALIDAD VA EL STRING DIRECTAMENTE
 			Key ssk(doc->getNombre());
-			//sé que acá hay algo mal, el polimorfismo no funcionará
 			ICollectible* dt = new DataDocumento(doc->getDataDocumento()); 
 			l->add(doc,ssk);
 			i->next();
