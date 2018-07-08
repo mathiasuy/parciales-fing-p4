@@ -15,7 +15,7 @@
 	{};
 
 	DataDocumento::DataDocumento(string a,string b)
-	:DataDocumento(a,b,0)
+	:DataDocumento(a,b,1)
 	{};
 
 	DataDocumento::~DataDocumento(){};
