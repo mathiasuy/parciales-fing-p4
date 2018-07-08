@@ -14,8 +14,7 @@
 	TextoPlano::~TextoPlano(){
 		IIterator i = cambios->getIterator();
 		while (i->hasCurrent()){
-			Cambios* c = (Cambios*)i->removeCurrent();
-			delete c;
+			delete (Cambios*)(i->removeCurrent());
 		}
 		delete i;
 		delete cambios;

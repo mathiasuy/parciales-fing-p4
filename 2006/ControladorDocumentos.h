@@ -4,8 +4,8 @@ private:
 	ControladorDocumentos();
 	static ControladorDocumentos* instance;
 public:
-	ControladorDocumentos* getInstance();
-	ICollection* listarDocumentos();
+	static ControladorDocumentos* getInstance();
+	IStringDictionary* listarDocumentos();
 	void borrarDocumento(string);
 	virtual ~ControladorDocumentos();
 }
