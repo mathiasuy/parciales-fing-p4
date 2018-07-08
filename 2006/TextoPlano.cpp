@@ -1,4 +1,4 @@
-	DataDocumento* TextoPlano::getDataDocumento(){
+	DataDocumento TextoPlano::getDataDocumento(){
 		DataDocumento d = Documento::getDataDocumento();
 		return DataDocumento(d.getNombre(),d.getDescripcion(),cambios->size()+1);
 	};
