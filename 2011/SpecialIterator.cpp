@@ -1,16 +1,9 @@
 #include "SpecialIterator.h"	
 	
-	SpecialIterator::SpecialIterator(Node* n){
-		this->current = n;
-		this->stepSize = 1;
-		this->forward = true;
-	}
+	SpecialIterator::SpecialIterator(Node* n)current(n),stepSize(1),forward(true){}
 
-	SpecialIterator::~SpecialIterator(){
-	}
+	SpecialIterator::~SpecialIterator(){}
 	
-
-
 	bool SpecialIterator::hasNext(){
 		if (current == NULL)
 			return false;
