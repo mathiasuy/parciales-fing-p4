@@ -1,6 +1,6 @@
 #include "SpecialIterator.h"	
 	
-	SpecialIterator::SpecialIterator(Node* n)current(n),stepSize(1),forward(true){}
+	SpecialIterator::SpecialIterator(Node* n):current(n),stepSize(1),forward(true){}
 
 	SpecialIterator::~SpecialIterator(){}
 	
